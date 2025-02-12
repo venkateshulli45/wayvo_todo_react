@@ -1,0 +1,124 @@
+/* Styles for the Todo Page */
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.todo-container {
+    width: 400px;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #6a11cb;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #28a745, #1e8e3e);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.edit {
+    background: linear-gradient(to right, #ffc107, #ff9800);
+}
+
+.edit:hover {
+    background: linear-gradient(to right, #f0a500, #e08c00);
+}
+
+.mark {
+    background: linear-gradient(to right, #007bff, #0056b3);
+}
+
+.mark:hover {
+    background: linear-gradient(to right, #0069d9, #0050b3);
+}
+
+.del {
+    background: linear-gradient(to right, #dc3545, #c82333);
+}
+
+.del:hover {
+    background: linear-gradient(to right, #c82333, #b21f2d);
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.todo-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    background: #f9f9f9;
+    margin: 5px 0;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.todo-list li:hover {
+    background: #ececec;
+}
+
+.completed .todo-text {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.todo-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.todo-buttons button {
+    width: auto;
+    padding: 8px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.logout-button {
+    width: 100px;
+    margin-bottom: 15px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
+
+.logout-button:hover {
+    background: linear-gradient(to right, #d40d4d, #c81717);
+}
